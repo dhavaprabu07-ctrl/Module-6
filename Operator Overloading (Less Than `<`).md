@@ -25,21 +25,25 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
- class Rectangle:
-    __length = 0 
-    __breadth = 0
-    def __init__(self):
-      self.__length = 5
-      self.__breadth = 3
-      print(self.__length)
-      print(self.__breadth)
-   
-  obj = Rectangle()
+ class A:
+    def __init__(self, a):
+        self.a = a
+
+    def __lt__(self, o):
+        if self.a < o.a:
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+
+ob1 = A(10)
+ob2 = A(20)
+
+print(ob1 < ob2)
 ## Output
 
-<img width="384" height="185" alt="image" src="https://github.com/user-attachments/assets/1314b9bd-10fd-4da6-a62d-076f7c5cf61a" />
+<img width="1907" height="579" alt="image" src="https://github.com/user-attachments/assets/8f45a8ad-993e-40f9-89fe-dcc89df54a47" />
 
 ## Result
-Thus the program to implement Encapsulation in Python by defining a class Rectangle with private member variables __length and __breadth is executed successfully.
+The given program is executed successfully.
 
 
