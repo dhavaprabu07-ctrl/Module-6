@@ -64,8 +64,10 @@ print("Area of a circle:", c.area())
 print("Area of a square:", s.area()) 
 print("Area of a triangle:", t.area())
 ## Output
-<img width="814" height="404" alt="image" src="https://github.com/user-attachments/assets/35907284-9fd8-425e-b3d1-a10d50a5b6fc" />
+<img width="1919" height="680" alt="image" src="https://github.com/user-attachments/assets/17dcab99-0161-4557-910b-4d5cb2bea104" />
+
 
 ## Result
-Thus the program to create an abstract class named Shape with an abstract method calculate_area, and implement this method in two subclasses: Rectangle and Circle is executed successfully.
+The given program is executed successfully.
+
 
