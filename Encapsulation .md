@@ -23,21 +23,43 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
- class Rectangle:
-    __length = 0 
-    __breadth = 0
-    def __init__(self):
-      self.__length = 5
-      self.__breadth = 3
-      print(self.__length)
-      print(self.__breadth)
-   
-  obj = Rectangle()
+ from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+    @abstractmethod
+    def calculate_area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, length=5, breadth=3):
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        area = self.length * self.breadth
+        print(f"Area of Rectangle: {area}")
+
+class Circle(Shape):
+    def __init__(self, radius=4):
+        self.radius = radius
+
+    def calculate_area(self):
+        area = math.pi * self.radius ** 2
+        print(f"Area of Circle: {area:.2f}")
+
+rect = Rectangle()
+circ = Circle()
+
+rect.calculate_area()
+circ.calculate_area()
 ## Output
 
-<img width="384" height="185" alt="image" src="https://github.com/user-attachments/assets/6b750d40-ba60-444f-9ce4-06b87da8a4b3" />
+<img width="1913" height="466" alt="image" src="https://github.com/user-attachments/assets/e7922ed8-fc40-42bc-b492-60577b87e95e" />
+
 
 ## Result
-Thus the program to implement Encapsulation in Python by defining a class Rectangle with private member variables __length and __breadth is executed successfully.
+The given program is executed successfully.
+
 
 
