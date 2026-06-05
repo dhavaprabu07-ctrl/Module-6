@@ -14,21 +14,26 @@ To write a Python program that demonstrates class inheritance by creating a pare
 7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
 ## 💻 PROGRAM:
-  class Rectangle:
-    __length = 0 
-    __breadth = 0
-    def __init__(self):
-      self.__length = 5
-      self.__breadth = 3
-      print(self.__length)
-      print(self.__breadth)
-   
-  obj = Rectangle()
+ class Fish:
+    def type(self):
+        print("fish")
+
+class Shark(Fish):
+    def type(self):
+        print("shark")
+
+obj_goldfish = Fish()
+obj_hammerhead = Shark()
+
+for obj in (obj_goldfish, obj_hammerhead):
+    obj.type()
 
 ## OUTPUT
 
-<img width="384" height="185" alt="image" src="https://github.com/user-attachments/assets/57e26856-e686-4016-ab7a-facbeeb446fa" />
+<img width="1919" height="595" alt="image" src="https://github.com/user-attachments/assets/9093b4e7-a584-495b-a15c-a9ac68581b96" />
+
 
 ## RESULT
-Thus the program to implement Encapsulation in Python by defining a class Rectangle with private member variables __length and __breadth is executed successfully.
+The given program is executed successfully.
+
 
